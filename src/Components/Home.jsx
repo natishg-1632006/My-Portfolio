@@ -1,5 +1,5 @@
 import profile from '/image/profile2.jpg'
-
+import { CgArrowRightO } from 'react-icons/cg';
 const Home = () => {
     return (
         <>
@@ -11,6 +11,11 @@ const Home = () => {
                     <p className='max-w-100 text-center md:text-justify text-sm leading-loose mt-3 text-gray-500'>I’m a MERN Stack and WordPress Developer passionate about creating modern, user-friendly web solutions.
                         I enjoy building interactive applications and dynamic websites that bring ideas to life.
                     </p>
+                    <div className='mt-2 flex justify-center md:justify-start '>
+                        <button className='flex items-center  py-3 px-2 bg-darkColor text-backgroundColor rounded-md cursor-pointer shadow-md hover:bg-green-900'>Download CV 
+                           <CgArrowRightO className='ml-3 text-xl font-bold text-backgroundColor'/>
+                        </button>
+                    </div>
                 </div>
                 <div className='mb-10' >
                     <img
