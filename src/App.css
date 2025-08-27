@@ -21,11 +21,15 @@
  }
 
  .skillsContainer{
-  @apply w-75 h-75 bg-greenlight p-5 rounded-md shadow-md;
+  @apply w-75 h-85  bg-greenlight p-5 rounded-md shadow-md;
  }
 
  .skillsTitle{
   @apply text-[19px] text-center font-bold text-darkColor;
+ }
+
+ .allSkills{
+  @apply h-25 w-20 bg-backgroundColor shadow-2xl rounded-md pt-1 px-1 cursor-pointer hover:animate-bounce ;
  }
 }
 
