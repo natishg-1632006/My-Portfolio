@@ -31,7 +31,22 @@
  .allSkills{
   @apply h-25 w-20 bg-backgroundColor shadow-2xl rounded-md pt-1 px-1 cursor-pointer hover:animate-bounce ;
  }
+
+ .projectCard{
+  @apply px-2 py-0.5 text-[11px] bg-green-300 rounded-full mr-3;
+ }
 }
+
+html, body {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+  display: none; 
+}
+
 
 @keyframes shake {
   0%, 100% { transform: translatey(0); }
