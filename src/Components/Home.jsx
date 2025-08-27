@@ -3,21 +3,21 @@ import { CgArrowRightO } from 'react-icons/cg';
 const Home = () => {
     return (
         <>
-            <div className=' flex flex-col-reverse justify-center md:justify-around h-screen items-center md:flex-row '>
-                <div className='mb-10'>
+            <div id="Home" className= 'flex flex-col-reverse pt-10 justify-center md:justify-around md:pt-40 md:mb-25 items-center md:flex-row '>
+                <div className='mb-10 mt-10 md:mt-0'>
                     <p className='text-2xl text-center md:text-justify font-semibold text-darkColor'>HELLO I AM</p>
                     <h1 className='text-5xl text-center md:text-justify md:text-7xl mt-4 font-extrabold text-darkColor'> NATISH G,</h1>
-                    <p className='text-2xl text-center md:text-justify font-semibold mt-3 text-lightColor'>MERN Stack Developer</p>
+                    <p className='text-2xl text-center md:text-justify font-semibold mt-3 text-lightColor animate-typewriter'>MERN Stack Developer</p>
                     <p className='max-w-100 text-center md:text-justify text-sm leading-loose mt-3 text-gray-500'>I’m a MERN Stack and WordPress Developer passionate about creating modern, user-friendly web solutions.
                         I enjoy building interactive applications and dynamic websites that bring ideas to life.
                     </p>
-                    <div className='mt-2 flex justify-center md:justify-start '>
+                             <div className='mt-2 flex justify-center md:justify-start '>
                         <button className='flex items-center  py-3 px-2 bg-darkColor text-backgroundColor rounded-md cursor-pointer shadow-md hover:bg-green-900'>Download CV 
                            <CgArrowRightO className='ml-3 text-xl font-bold text-backgroundColor'/>
                         </button>
                     </div>
                 </div>
-                <div className='mb-10' >
+                <div className='mb-10 md:m-0 animate-shake' >
                     <img
                         className="w-75 h-75 rounded-full object-cover lg:w-100 lg:h-100"
                         src={profile}
