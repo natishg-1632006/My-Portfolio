@@ -12,7 +12,7 @@ const Home = () => {
                         I enjoy building interactive applications and dynamic websites that bring ideas to life.
                     </p>
                              <div className='mt-2 flex justify-center md:justify-start '>
-                        <button className='flex items-center  py-3 px-2 bg-darkColor text-backgroundColor rounded-md cursor-pointer shadow-md hover:bg-green-900'>Download CV 
+                        <button className='flex items-center  py-3 px-2 active:bg-green-900 bg-darkColor text-backgroundColor rounded-md cursor-pointer shadow-md hover:bg-green-900'>Download CV 
                            <CgArrowRightO className='ml-3 text-xl font-bold text-backgroundColor'/>
                         </button>
                     </div>

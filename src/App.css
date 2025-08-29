@@ -35,6 +35,10 @@
  .projectCard{
   @apply px-2 py-0.5 text-[11px] bg-green-300 rounded-full mr-3;
  }
+
+ .projectTags{
+  @apply bg-green-600 px-2 rounded-full text-white text-[12px] shadow-md;
+ }
 }
 
 html, body {
@@ -48,13 +52,36 @@ body::-webkit-scrollbar {
 }
 
 
+
+.animate-shake {
+  animation: shake 1s ease-in-out infinite;
+}
+
+.animate-rotate {
+animation: rotate 1s ease-in-out forwards;
+  transform-style: preserve-3d; 
+  backface-visibility: hidden; 
+}
+
 @keyframes shake {
   0%, 100% { transform: translatey(0); }
   25% { transform: translatey(-5px); }
   75% { transform: translatey(5px); }
 }
-.animate-shake {
-  animation: shake 1s ease-in-out infinite;
-}
 
+
+
+
+.perspective {
+  perspective: 1000px;
+}
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-x-180 {
+  transform: rotatex(180deg);
+}
 
