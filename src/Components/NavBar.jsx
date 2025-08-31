@@ -12,6 +12,7 @@ const NavBar = () => {
                         <li ><a className='navClick'  href='#About'>About</a></li>
                         <li ><a className='navClick'  href='#Skills'>Skills</a></li>
                         <li ><a className='navClick'  href='#Projects'>Projects</a></li>
+                        <li ><a className='navClick'  href='#Certification'>Certification</a></li>
                         <li ><a className='navClick'  href='#'>Contact</a></li>
                     </ul>
                     <button className='md:hidden cursor-pointer'
@@ -22,7 +23,7 @@ const NavBar = () => {
                 </div>
             </nav>
             <nav
-                className={`bg-greenlight md:hidden sticky top-18.5 overflow-hidden transition-all duration-500 ease-in-out z-10
+                className={`bg-greenlight md:hidden sticky top-15 overflow-hidden transition-all duration-500 ease-in-out z-10
                  ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>                
                  <div className='py-5 shadow-md'>
                     <ul className='flex flex-col items-center space-y-5 '>
@@ -30,6 +31,7 @@ const NavBar = () => {
                         <li ><a className='navClick' onClick={() => setIsOpen(!isOpen)} href='#About'>About</a></li>
                         <li ><a className='navClick' onClick={() => setIsOpen(!isOpen)} href='#Skills'>Skills</a></li>
                         <li ><a className='navClick' onClick={() => setIsOpen(!isOpen)} href='#Projects'>Projects</a></li>
+                        <li ><a className='navClick' onClick={() => setIsOpen(!isOpen)} href='#Certification'>Certification</a></li>
                         <li ><a className='navClick' onClick={() => setIsOpen(!isOpen)} href='#'>Contact</a></li>
                     </ul>
                 </div>

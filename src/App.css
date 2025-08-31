@@ -12,6 +12,7 @@
   --color-greenlight:#C4DAD2;
   --font-Poppins:"Poppins",sans-serif;
   --font-Bitcount: "Bitcount Prop Double", system-ui, sans-serif;
+  --shadow-custom1:rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 
@@ -29,7 +30,7 @@
  }
 
  .allSkills{
-  @apply h-25 w-20 bg-backgroundColor shadow-2xl rounded-md pt-1 px-1 cursor-pointer hover:animate-bounce ;
+  @apply h-25 w-20 bg-backgroundColor shadow-2xl rounded-md pt-1 px-1 delay-1000 cursor-pointer hover:animate-bounce ;
  }
 
  .projectCard{
@@ -38,6 +39,26 @@
 
  .projectTags{
   @apply bg-green-600 px-2 rounded-full text-white text-[12px] shadow-md;
+ }
+
+ .contactData{
+  @apply flex items-center gap-3 mb-5;
+ }
+
+ .contactLogo{
+  @apply text-2xl text-darkColor;
+ }
+
+ .contactInfo{
+  @apply text-lg font-semibold text-darkColor cursor-pointer;
+ }
+
+ .formlable{
+  @apply text-darkColor font-semibold;
+ }
+
+ .inputBox{
+  @apply border-2 border-darkColor rounded-md p-2 lg:w-150;
  }
 }
 
@@ -62,6 +83,30 @@ animation: rotate 1s ease-in-out forwards;
   transform-style: preserve-3d; 
   backface-visibility: hidden; 
 }
+
+
+@media (max-width: 640px) {
+  .slick-slide {
+    min-width: 400px !important;
+    max-width: 400px !important;
+  }
+
+
+  .slick-track {
+    display: flex !important;
+  }
+
+  .slick-slide > div {
+    width: 400px ;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}
+
+
 
 @keyframes shake {
   0%, 100% { transform: translatey(0); }
